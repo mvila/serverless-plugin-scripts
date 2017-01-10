@@ -26,7 +26,7 @@
   "scripts": {
     "compile": "babel src --out-dir lib",
     "prepublish": "npm run compile",
-    "release": "npm run lint && npm run compile && npm test && npm version $npm_config_release_type && git push --follow-tags",
+    "release": "npm run lint && npm run compile && npm test && npm version $npm_config_release_type && git push --follow-tags && npm publish",
     "release-patch": "npm run release --release-type=patch",
     "release-minor": "npm run release --release-type=minor",
     "release-major": "npm run release --release-type=major",
