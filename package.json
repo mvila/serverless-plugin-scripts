@@ -1,0 +1,43 @@
+{
+  "name": "serverless-plugin-scripts",
+  "version": "1.0.0",
+  "description": "Add scripting capabilities to the Serverless Framework",
+  "keywords": [
+    "serverless",
+    "plugin",
+    "script",
+    "shell",
+    "customize",
+    "command",
+    "hook",
+    "CLI"
+  ],
+  "author": "Manuel Vila <mvila@3base.com>",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mvila/serverless-plugin-scripts"
+  },
+  "scripts": {
+    "compile": "babel src --out-dir lib",
+    "prepublish": "npm run compile",
+    "release": "npm run lint && npm run compile && npm test && npm version $npm_config_release_type && git push --follow-tags",
+    "release-patch": "npm run release --release-type=patch",
+    "release-minor": "npm run release --release-type=minor",
+    "release-major": "npm run release --release-type=major",
+    "lint": "eslint .",
+    "test": "echo \"Warning: no test specified\" && exit 0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-es2015": "^6.18.0",
+    "eslint": "^3.13.1",
+    "eslint-config-next": "^0.1.13"
+  }
+}
