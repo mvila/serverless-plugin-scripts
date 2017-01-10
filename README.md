@@ -1,6 +1,6 @@
 # serverless-plugin-scripts [![npm version](https://img.shields.io/npm/v/serverless-plugin-scripts.svg)](https://www.npmjs.com/package/serverless-plugin-scripts)
 
-Add scripting capabilities to the Serverless Framework.
+Add scripting capabilities to the [Serverless Framework](https://serverless.com/framework/).
 
 ## Installation
 
