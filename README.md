@@ -45,7 +45,7 @@ custom:
 
 The next time you run `serverless deploy`, your script will be automatically invoked during the `deploy:createDeploymentArtifacts` lifecycle event.
 
-To find out all existing lifecycle events, check out the [Serverless Framework documentation](https://serverless.com/framework/docs/).
+To find out about existing lifecycle events, check out [this page](https://gist.github.com/HyperBrain/50d38027a8f57778d5b0f135d80ea406).
 
 ## Author
 
