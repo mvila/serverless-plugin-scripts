@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-scripts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Add scripting capabilities to the Serverless Framework",
   "keywords": [
     "serverless",
