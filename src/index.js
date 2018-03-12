@@ -51,7 +51,12 @@ class Scripts {
   runHook(name) {
     const hooks = this.getConfig().hooks;
     const hook = hooks[name];
-    this.execute(hook);
+    if (Array.isArray(hook)) {
+      hook.forEach((h) => this.execute(h));
+    } else {
+      this.execute(hook);
+    }
+    
   }
 
   execute(command) {
