@@ -55,7 +55,12 @@ class Scripts {
   }
 
   execute(command) {
-    execSync(command, { stdio: 'inherit' });
+    const providerEnvVars =
+          this.serverless.service &&
+          this.serverless.service.provider &&
+          this.serverless.service.provider.environment || {};
+    const envVars = Object.assign({}, process.env, providerEnvVars);
+    execSync(command, { stdio: 'inherit', env: envVars });
   }
 }
 
