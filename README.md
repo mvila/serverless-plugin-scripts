@@ -2,6 +2,10 @@
 
 Add scripting capabilities to the [Serverless Framework](https://serverless.com/framework/).
 
+## Caution
+
+**This project is in maintenance mode, and it will not get any new features.**
+
 ## Installation
 
 Install the plugin in your Serverless (v1.0 or higher) project:
