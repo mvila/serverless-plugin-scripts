@@ -44,7 +44,7 @@ It is possible to define simple hooks for existing Serverless CLI commands by ad
 custom:
   scripts:
     hooks:
-      'deploy:createDeploymentArtifacts': npm run compile
+      'package:createDeploymentArtifacts': npm run compile
 ```
 
 The next time you run `serverless deploy`, your script will be automatically invoked during the `deploy:createDeploymentArtifacts` lifecycle event.
